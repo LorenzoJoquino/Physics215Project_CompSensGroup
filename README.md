@@ -1,3 +1,7 @@
-# Physics215Project_CompSensGroup
-This is our project for Physics 215.
+# Compressing and storing data
+
+why --> lower cost of storing data 
+how --> random sampling and use of bases functions 
+
+
 
