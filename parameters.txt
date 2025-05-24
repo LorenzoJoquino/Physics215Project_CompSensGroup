@@ -1,11 +1,11 @@
-We test how well the original signal can be recovered with varying number of random sample points, p_sub.
-We also sampled uniformly-spaced points for comparison. It was kept at p_reg = 1260 because that is the
-Nyquist frequency, which is double the highest signal frequency. For each p_sub, we first reconstructed
-signal with a frequency of 30 Hz. Then, we reconstructed signal with an added sine wave with frequency
-60Hz. We kept adding more sine waves with frequencies shown in freq to the signal and reconstructed them.
-The power spectral density (PSD) of the original signal, reconstructed signal with uniformly-spaced
-points, and the reconstructed signal with random points were acquired. The errors of the reconstructed
-signals with respect to the PSD of the original signal were computed and compared to each other.
+We evaluated how well the original signal can be reconstructed using varying numbers of randomly sampled points,
+denoted as p_sub. For comparison, we also reconstructed the signal using uniformly spaced samples at a fixed
+count of p_reg = 1260, which corresponds to the Nyquist rate—twice the highest frequency component in the signal.
+For each value of p_sub, we first tested reconstruction using a 30 Hz sine wave. Additional sine waves with
+frequencies listed in the array freq (e.g., 60 Hz, etc.) were incrementally added to the signal. The signal was
+reconstructed at each step. We then computed the Power Spectral Density (PSD) of the original signal, the signal
+reconstructed using uniformly spaced samples, and the one reconstructed using random sampling. Finally, we
+calculated and compared the reconstruction errors of both methods with respect to the PSD of the original signal.
 
 Parameters:
 Number of points of the original signal, n = 4096
