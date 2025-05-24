@@ -1,1 +1,4 @@
 addDependencies/*
+data/*
+.vercel
+.sesskey
