@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath('../physics215ProjectCode'))
 from cosamp_fn import cosamp
 from rmse import rmse
 
-def signal_reconstruction(n, p, freq_start, freq_end, increments):
+def recon(n, p, freq_start, freq_end, increments):
     ## Generate signal, DCT of signal
     t = np.linspace(0,1,n)
     perm = np.floor(np.random.rand(p) * n).astype(int)
@@ -30,7 +30,6 @@ def signal_reconstruction(n, p, freq_start, freq_end, increments):
     # for regular nyquist sampling
     p_uniform = freq_end * 2 # double the highest signal frequency
     indices = np.linspace(0, n - 1, p_uniform, dtype=int)
-
     
     for addfreq in range(freq_start + increments, freq_end + increments + 1, increments):
         signal = x.copy()
@@ -47,8 +46,8 @@ def signal_reconstruction(n, p, freq_start, freq_end, increments):
         x_recon_reg = idct(x_dct, norm='ortho')
         recon_reg.append(x_recon_reg)
 
-        xt_recon_reg = np.fft.fft(x_recon_reg,n)
-        PSD_recon_reg = xt_recon_reg * np.conj(xt_recon_reg) / n
+        xt_recon_reg = np.fft.fft(x_recon_reg,n) # computes the (fast) discrete fourier transform
+        PSD_recon_reg = xt_recon_reg * np.conj(xt_recon_reg)/n # Power spectrum (how much power in each freq)
         PSD_reg.append(PSD_recon_reg)
 
         # sub-nyquist
@@ -65,11 +64,16 @@ def signal_reconstruction(n, p, freq_start, freq_end, increments):
         PSD_recon_sub = xt_recon_sub * np.conj(xt_recon_sub)/n # Power spectrum (how much power in each freq)
         PSD_sub.append(PSD_recon_sub)
         
-        #calculating rmse of PSD
-        L = int(np.floor(n/2))
+        #calculating rmse of reconstructed signal
+        # L = int(np.floor(n/2))
 
-        error_reg = rmse(PSD[:L], PSD_recon_reg[:L])
-        error_sub = rmse(PSD[:L], PSD_recon_sub[:L])
+        indices = np.linspace(0, len(signal) - 1, len(x_recon_reg), dtype=int)
+        downsampled_signal = signal[indices]
+
+        error_reg = rmse(downsampled_signal,x_recon_reg)
+        error_sub = rmse(signal,x_recon_sub)
+        # error_reg = rmse(PSD[:L], PSD_recon_reg[:L])
+        # error_sub = rmse(PSD[:L], PSD_recon_sub[:L])
         errors_reg.append(f"{error_reg.real:.5g}")
         errors_sub.append(f"{error_sub.real:.5g}")
         
