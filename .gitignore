@@ -1,2 +1,3 @@
 addDependencies/matlabDependencies/*
 addDependencies*
+notebooks/.ipynb_checkpoints*
