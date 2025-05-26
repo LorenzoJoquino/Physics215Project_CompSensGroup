@@ -43,3 +43,7 @@ def constructSyntheticSignal(n, f_a_orig, t_end=1):
 
         return x, PSD, t
 
+def getPSD(x):
+    xt = np.fft.fft(x) # Fourier transformed signal
+    PSD = xt * np.conj(xt) / len(x)
+    return PSD
