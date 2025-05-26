@@ -106,9 +106,11 @@ def sub_nyquist_reconstruction(p, signal):
     signal_samples = signal[perm]
     Psi = dct(np.identity(len(signal))) 
     Theta = Psi[perm,:]
-    s = cosamp_fn.cosamp(Theta,y,10,epsilon=1.e-10,max_iter=10) 
+    s = cosamp_fn.cosamp(Theta,signal_samples,10,epsilon=1.e-10,max_iter=10) 
     reconstruction = idct(s)
     return reconstruction
 
 def PSD(signal):
-    return signal * np.conj(signal)/len(signal)
+    signal_t = np.fft.fft(signal)
+    PSD = signal_t * np.conj(signal_t)/len(signal)
+    return PSD
