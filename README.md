@@ -9,7 +9,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
   <tr>
     <td style="width:50%; vertical-align: top;">
       <p>
-        1. <b> Sampling Frequency Efficiency. </b> For single-frequency waves, accurate reconstruction \(ratio < 1\)by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency.
+        1. <b> Sampling Frequency Efficiency. </b> For single-frequency waves, reconstruction (ratio RMSE < 1) by random sampling is more accurate than uniform sampling. This is the case at sampling frequencies 10 times fewer than the original signal's frequency.
       </p>
     </td>
     <td style="width:80%; text-align: right;">
