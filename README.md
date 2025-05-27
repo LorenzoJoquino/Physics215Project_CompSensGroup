@@ -26,16 +26,11 @@ Matt Bagnes, Lorenzo Joquino
   </tr>
 </table>
 
-2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. 
-
-<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="800"/>
-
-
 <table>
   <tr>
     <td style="width:10%; vertical-align: top;">
       <p>
-        2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity.
+        2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. The frequencies between each wave added are spaced by 60 Hz apart. The sampling frequency for reconstruction is \_ Hz. 
       </p>
     </td>
     <td style="width:90%; text-align: right;">
