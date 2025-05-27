@@ -22,7 +22,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
   <tr>
     <td style="width:10%; vertical-align: top;">
       <p>
-        2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. The frequencies between each wave added are spaced by 60 Hz apart. The sampling frequency for reconstruction is 64 Hz. 
+        2. **Adding more high frequency waves.** Accurate reconstruction can still be performed when up to 5 more waves are added. Significant errors are observed beyond this complexity. The lowest frequency wave is 30 Hz. From there, we add frequencies at intervals of 60 Hz. The sampling frequency for reconstruction is 64 Hz. 
       </p>
     </td>
     <td style="width:90%; text-align: right;">
