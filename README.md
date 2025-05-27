@@ -7,8 +7,8 @@ Matt Bagnes, Lorenzo Joquino
 
 ### General Approach
 
-1. Random sampling - the Nyquist Frequency condition applies to uniformly-spaced sampling. Random-location sampling captures both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
-2. Basis Functions - Signals can be expressed as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra with the *discrete cosine transform*. 
+1. Random-location sampling captures both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
+2. Signals can be expressed as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra, fitting the sampled points in the *discrete cosine transform*. 
 3. Code - we reference code by Steve Brunton from the book Data Driven Science and Engineering.
 
 ### Key Highlights 
@@ -28,14 +28,10 @@ Matt Bagnes, Lorenzo Joquino
 
 2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. 
 
-
-<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="1000"/>
+<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="800"/>
 
 3. When the spacing of these added waves is larger or smaller, the accuracy changes 
-- **x-axis is spacing between waves, y-axis is RMSE. Choose one p instead**.  
-
-### Specific Approach (Talk all the equations)
-
+ 
 
 ### Possible Extenstions 
 - Filtering Audio 
