@@ -25,10 +25,8 @@ $$ b_{p\ rows} = C_{p\ by\ n} \times v_{n\ rows} $$
 
 6. The goal of the algorithm is to find $v_{best}$ such that $Cv$ minimizes $b$. This algorithm will repeat, by finding a different $v$. The algorithm ends when the difference in the calculated $b$ in the previous iteration. In solving the matrix equation, we use the least squares algorithm
 
-        #in cosamp_fn.py, cosamp function
-         b[omega], _, _, _ = np.linalg.lstsq(phiT, u)
 
-7. Throughout the algorithm, sparsity is introduced. We assert that most signals can carry a few relevant frequencies with the rest being noise. To manifest this assumption of sparsity, we focus on the top 10-20 largest coefficients (per new iteration).
+7. Throughout the algorithm, sparsity is introduced. We assert that most signals can carry a few relevant frequencies with the rest being noise. To manifest this assumption of sparsity, we focus on the top 10-20 largest coefficients (indicated by $s$ in the code) per new iteration.
 
         #in cosamp_fn.py, cosamp function
         omega = np.argsort(y)[-(2*s):] # large components
