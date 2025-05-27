@@ -1,10 +1,9 @@
 # Signal reconstruction at sub-Nyquist Frequencies
-- project members: Matt Bagnes, Lorenzo Joquino
+members: Matt Bagnes, Lorenzo Joquino
 
-## Motivation 
-To achieve accurate sampling of a signal, the sampling frequency must be at least twice as high as the highest relevant frequency in the signal - this is called the Nyquist Frequency. However, using a random sampling approach, we can reduce this sampling frequency while still getting accurate signal reconstruction. This is very useful in reducing cost for storing data.
-
-Our project tests the limits of this method of signal reconstruction. 
+1. To achieve accurate sampling of a signal, the sampling frequency must be at least twice as high as the highest relevant frequency in the signal - this is called the Nyquist Frequency. 
+2. However, using a random sampling approach, we can **reduce sampling frequency** while still getting **accurate signal reconstruction**. This is very useful in **reducing cost for storing data**.
+3. Our project tests the **limits** of this method of signal reconstruction. 
 
 ## General Approach
 1. Random sampling - the Nyquist Frequency condition applied to sampling at uniform spacing. When sampling is randomized, we can capture both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
