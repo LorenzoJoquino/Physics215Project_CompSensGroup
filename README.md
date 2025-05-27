@@ -1,7 +1,7 @@
-### Limits of signal reconstruction at sub-Nyquist Frequencies via random sampling
+### Limits of signal reconstruction at sub-Nyquist Frequencies
 Matt Bagnes, Lorenzo Joquino
 
-To store and analyze signals accurately, we usually need to take samples very frequently, which can be costly. Steve Brunton\* discusses explores a smarter method where points are sampled at random intervals instead of at uniform intervals. This random sampling approach can still capture both the long-term and short-term characteristics of the signal, even with fewer samples. The sampled points can then be fitted in order to recreate the full signal. Our project tests the limits the reconstruction method based on the signal's complexity.
+To store and analyze signals accurately, we usually need to take samples very frequently, which can be costly. Steve Brunton\* discusses explores a method where points are sampled at random intervals instead of at uniform intervals. This approach can still capture both the long-term and short-term characteristics of the signal, even with fewer samples. The sampled points can then be fitted in order to recreate the full signal. Our project tests the limits the reconstruction method based on the signal's complexity.
 
 #### Key Highlights 
 
