@@ -22,9 +22,6 @@ Our project tests the limits of this method of signal reconstruction.
 
 <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="1000"/>
 
-- **Graph where x-axis is the number of waves added, and the y-axis is the RMSE, and the several graphs where differing P is used**
-- **Alternatively \(or even better\), x-axis is the number of waves added, y-axis is the p data points, and then color is the RMSE. Use color bar where it is white at small RMSE, and more shadier at larger RMSE.**
-
 3. When the spacing of these added waves is larger or smaller, the accuracy changes 
 - **x-axis is spacing between waves, y-axis is RMSE. Choose one p instead**.  
 
