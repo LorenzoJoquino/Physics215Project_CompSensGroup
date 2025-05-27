@@ -1,15 +1,9 @@
 ### Signal reconstruction at sub-Nyquist Frequencies
 Matt Bagnes, Lorenzo Joquino
 
-1. To achieve accurate sampling of a signal, the sampling frequency must be at least twice as high as the highest relevant frequency in the signal - this is called the Nyquist Frequency. 
-2. However, using a random sampling approach, we can **reduce sampling frequency** while still getting **accurate signal reconstruction**. This is very useful in **reducing cost for storing data**.
-3. Our project tests the **limits** of this method of signal reconstruction. 
+To store and analyze signals accurately, we usually need to take samples very frequently, which can be costly. Steve Brunton\* discusses explores a smarter method where points are sampled at random intervals instead of at uniform intervals. This random sampling approach can still capture both the long-term and short-term characteristics of the signal, even with fewer samples. The sampled points can then be fitted in order to recreate the full signal. Our project tests the limits the reconstruction method based on the signal's complexity.
 
-#### General Approach
-
-1. Random-location sampling captures both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
-2. Signals can be expressed as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra, fitting the sampled points in the *discrete cosine transform*. 
-3. Code - we reference code by Steve Brunton from the book Data Driven Science and Engineering.
+\*we reference code by Steve Brunton from the book Data Driven Science and Engineering.
 
 #### Key Highlights 
 
