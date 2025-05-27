@@ -19,7 +19,7 @@ Our project tests the limits of this method of signal reconstruction.
 2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. 
 
 
-<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="400"/>
+<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="500"/>
 
 - **Graph where x-axis is the number of waves added, and the y-axis is the RMSE, and the several graphs where differing P is used**
 - **Alternatively \(or even better\), x-axis is the number of waves added, y-axis is the p data points, and then color is the RMSE. Use color bar where it is white at small RMSE, and more shadier at larger RMSE.**
