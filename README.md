@@ -26,7 +26,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
       </p>
     </td>
     <td style="width:90%; text-align: right;">
-     <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="1700"/>
+     <img src="/readme_images_src_new/PSD_sub_frequency.jpg" alt="drawing" width="1700"/>
     </td>
   </tr>
 </table>
@@ -39,7 +39,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
       </p>
     </td>
     <td style="width:90%; text-align: right;">
-     <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="1700"/>
+     <img src="/readme_images_src_new/PSD_sub_spacing.jpg" alt="drawing" width="1700"/>
     </td>
   </tr>
 </table>
