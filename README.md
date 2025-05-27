@@ -1,4 +1,4 @@
-# Limits of data reconstruction at sub-Nyquist Frequencies
+# Signal reconstruction at sub-Nyquist Frequencies
 - project members: Matt Bagnes, Lorenzo Joquino
 
 ## Motivation 
@@ -9,8 +9,7 @@ Our project tests the limits of this method of signal reconstruction.
 ## General Approach
 1. Random sampling - the Nyquist Frequency condition applied to sampling at uniform spacing. When sampling is randomized, we can capture both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
 2. Basis Functions - We can express a signal as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra when we reconstruct our signal 
-3. Sparse Approach - Signals normally have a few relevant signals \(while the rest are noise \). We introduce sparsity so that the weights can be dedicated to the most relevant frequencies in the signal 
-
+3. Code - we use code by Steve Brunton from the book Data Driven Science and Engineering .
 ## Key Highlights 
 
 1. For single-frequency waves accurate reconstruction by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency. 
@@ -29,6 +28,6 @@ Our project tests the limits of this method of signal reconstruction.
 
 
 ## Possible Extenstions 
-- Filtering Audio
+- Filtering Audio 
 
 
