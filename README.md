@@ -1,15 +1,17 @@
-# Signal reconstruction at sub-Nyquist Frequencies
-members: Matt Bagnes, Lorenzo Joquino
+## Signal reconstruction at sub-Nyquist Frequencies
+Matt Bagnes, Lorenzo Joquino
 
 1. To achieve accurate sampling of a signal, the sampling frequency must be at least twice as high as the highest relevant frequency in the signal - this is called the Nyquist Frequency. 
 2. However, using a random sampling approach, we can **reduce sampling frequency** while still getting **accurate signal reconstruction**. This is very useful in **reducing cost for storing data**.
 3. Our project tests the **limits** of this method of signal reconstruction. 
 
-## General Approach
-1. Random sampling - the Nyquist Frequency condition applied to sampling at uniform spacing. When sampling is randomized, we can capture both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
-2. Basis Functions - We can express a signal as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra when we reconstruct our signal 
-3. Code - we use code by Steve Brunton from the book Data Driven Science and Engineering .
-## Key Highlights 
+### General Approach
+
+1. Random sampling - the Nyquist Frequency condition applies to uniformly-spaced sampling. Random-location sampling captures both short-term \(high frequency\) and long-term \(low frequency\) behavior of the signal. 
+2. Basis Functions - Signals can be expressed as a weighted sum of cosine waves of varying frequencies. We solve for these weights through linear algebra with the *discrete cosine transform*. 
+3. Code - we reference code by Steve Brunton from the book Data Driven Science and Engineering.
+
+### Key Highlights 
 
 1. For single-frequency waves accurate reconstruction by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency. 
 
@@ -23,10 +25,10 @@ members: Matt Bagnes, Lorenzo Joquino
 3. When the spacing of these added waves is larger or smaller, the accuracy changes 
 - **x-axis is spacing between waves, y-axis is RMSE. Choose one p instead**.  
 
-## Specific Approach (Talk all the equations)
+### Specific Approach (Talk all the equations)
 
 
-## Possible Extenstions 
+### Possible Extenstions 
 - Filtering Audio 
 
 
