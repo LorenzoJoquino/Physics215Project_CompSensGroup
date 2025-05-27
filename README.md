@@ -13,7 +13,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
       </p>
     </td>
     <td style="width:90%; text-align: right;">
-      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="600"/>
+      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="500"/>
     </td>
   </tr>
 </table>
