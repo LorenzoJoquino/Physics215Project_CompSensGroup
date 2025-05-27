@@ -12,8 +12,8 @@ To store and analyze signals accurately, we usually need to take samples very fr
         1. <b> Sampling Frequency Efficiency. </b> For single-frequency waves, accurate reconstruction \(ratio < 1\)by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency.
       </p>
     </td>
-    <td style="width:70%; text-align: right;">
-      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="600"/>
+    <td style="width:80%; text-align: right;">
+      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="700"/>
     </td>
   </tr>
 </table>
