@@ -39,7 +39,7 @@ Matt Bagnes, Lorenzo Joquino
       </p>
     </td>
     <td style="width:90%; text-align: right;">
-     <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="2000"/>
+     <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="1700"/>
     </td>
   </tr>
 </table>
