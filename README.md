@@ -17,6 +17,19 @@ Matt Bagnes, Lorenzo Joquino
 
 <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="400"/>
 
+<table>
+  <tr>
+    <td style="width:60%; vertical-align: top;">
+      <p>
+        1. For single-frequency waves, accurate reconstruction by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency.
+      </p>
+    </td>
+    <td style="width:40%; text-align: right;">
+      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="300"/>
+    </td>
+  </tr>
+</table>
+
 2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. 
 
 
