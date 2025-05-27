@@ -1,4 +1,5 @@
-# Compressing and storing data at sub-Nyquist Frequencies
+# Limits of data reconstruction at sub-Nyquist Frequencies
+- project members: Matt Bagnes, Lorenzo Joquino
 
 ## Motivation 
 To achieve accurate sampling of a signal, the sampling frequency must be at least twice as high as the highest relevant frequency in the signal - this is called the Nyquist Frequency. However, using a random sampling approach, we can reduce this sampling frequency while still getting accurate signal reconstruction. This is very useful in reducing cost for storing data.
