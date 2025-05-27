@@ -12,12 +12,15 @@ Our project tests the limits of this method of signal reconstruction.
 
 ## Key Highlights 
 
-1. When this random sampling approach, accurate reconstruction can be performed at sampling frequencies \_ times fewer than the original frequency 
-![single wave stats]<img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="200"/>
+1. For single-frequency waves accurate reconstruction by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency. 
 
-- **I need a graph where the x-axis is the number of points used to sample, and the y-axis is the RMSE. Here you tried to reconstruct a single wave (preferably the 630 Hz wave only).**
+<img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="400"/>
 
-2. When more waves are added, the accurate reconstruction can be performed at this sampling frequencies 
+2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity. 
+
+
+<img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="400"/>
+
 - **Graph where x-axis is the number of waves added, and the y-axis is the RMSE, and the several graphs where differing P is used**
 - **Alternatively \(or even better\), x-axis is the number of waves added, y-axis is the p data points, and then color is the RMSE. Use color bar where it is white at small RMSE, and more shadier at larger RMSE.**
 
