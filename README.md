@@ -38,7 +38,7 @@ Matt Bagnes, Lorenzo Joquino
         2. When more waves are added, the accurate reconstruction can still be performed when 5 more waves are added. Significant errors are observed beyond this complexity.
       </p>
     </td>
-    <td style="width:90%; text-align: right;">
+    <td style="width:120%; text-align: right;">
      <img src="/readme_images_src_new/increasingNumberOfWavesPSD.jpg" alt="drawing" width="3200"/>
     </td>
   </tr>
