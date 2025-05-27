@@ -13,7 +13,7 @@ Our project tests the limits of this method of signal reconstruction.
 ## Key Highlights 
 
 1. When this random sampling approach, accurate reconstruction can be performed at sampling frequencies \_ times fewer than the original frequency 
-![single wave stats](/readme_images_src_new/singleWaveStats.jpg)
+![single wave stats]<img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="200"/>
 
 - **I need a graph where the x-axis is the number of points used to sample, and the y-axis is the RMSE. Here you tried to reconstruct a single wave (preferably the 630 Hz wave only).**
 
