@@ -48,4 +48,12 @@ To store and analyze signals accurately, we usually need to take samples very fr
 [Brunton, S. L., & Kutz, J. N. (2022). Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control (2nd ed.). Cambridge: Cambridge University Press.](https://databookuw.com/)
 
 
+#### Roadmap 
 
+- [How does reconstruction work? Summary](https://github.com/LorenzoJoquino/Physics215Project_CompSensGroup/blob/main/docs/signal_reconstruction.md)
+- How did we generate the figures in key highlights:
+  - [Key highlight 1:](https://github.com/LorenzoJoquino/Physics215Project_CompSensGroup/blob/main/notebooks/01_singleWavesTest.ipynb)
+  - [Key highlight 2:](https://github.com/LorenzoJoquino/Physics215Project_CompSensGroup/blob/main/notebooks/02_addingMoreWaves.ipynb)
+  - [Key highlight 3:](https://github.com/LorenzoJoquino/Physics215Project_CompSensGroup/blob/main/notebooks/03_manipulatingSpacing.ipynb)
+
+#### Future Extensions: Audio reconstruction (soon)
