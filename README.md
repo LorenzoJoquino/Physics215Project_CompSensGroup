@@ -5,7 +5,7 @@ To store and analyze signals accurately, we usually need to take samples very fr
 
 #### Key Highlights 
 
-<table style="height:20%">
+<table style="height:40%">
   <tr>
     <td style="width:10%; vertical-align: top; padding-bottom: 20px;">
       <p>
