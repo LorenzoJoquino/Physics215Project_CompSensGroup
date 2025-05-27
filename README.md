@@ -15,13 +15,13 @@ Matt Bagnes, Lorenzo Joquino
 
 <table>
   <tr>
-    <td style="width:40%; vertical-align: top;">
+    <td style="width:30%; vertical-align: top;">
       <p>
         1. For single-frequency waves, accurate reconstruction by random sampling can be performed at sampling frequencies 10 times fewer than the original signal's frequency.
       </p>
     </td>
-    <td style="width:60%; text-align: right;">
-      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="500"/>
+    <td style="width:70%; text-align: right;">
+      <img src="/readme_images_src_new/singleWaveStats.jpg" alt="drawing" width="600"/>
     </td>
   </tr>
 </table>
